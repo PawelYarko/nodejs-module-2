@@ -1,32 +1,18 @@
 {
-  "name": "template",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "start": "cross-env NODE_ENV=production node ./server.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
-    "lint": "eslint **/*.js",
-    "lint:fix": "eslint --fix **/*.js"
-  },
-  "dependencies": {
-    "cors": "2.8.5",
-    "cross-env": "7.0.3",
-    "express": "4.17.1",
-    "joi": "^17.6.0",
-    "morgan": "1.10.0",
-    "nanoid": "^3.3.4"
-  },
-  "devDependencies": {
-    "eslint": "7.19.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "5.2.0",
-    "nodemon": "2.0.15"
-  },
+  "name": "nodejs-module-2",
+  "version": "1.0.0",
   "description": "Виконайте форк цього репозиторію для виконання домашніх завдань (2-6)\r Форк створить репозиторій на вашому http://github.com",
   "main": ".eslintrc.js",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PawelYarko/nodejs-module-2.git"
@@ -36,6 +22,5 @@
   "bugs": {
     "url": "https://github.com/PawelYarko/nodejs-module-2/issues"
   },
-  "homepage": "https://github.com/PawelYarko/nodejs-module-2#readme",
-  "keywords": []
+  "homepage": "https://github.com/PawelYarko/nodejs-module-2#readme"
 }
