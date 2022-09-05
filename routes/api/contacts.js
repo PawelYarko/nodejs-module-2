@@ -6,9 +6,11 @@ const {ctrlWrapper} = require('../../helpers');
 
 const {authenticate, validationBody, isValidId} = require('../../middlewares');
 
+
 const router = express.Router();
 
 const { schemas } = require('../../models/contacts');
+
 
 router.get('/', authenticate, ctrlWrapper(ctrl.listContacts));
 
