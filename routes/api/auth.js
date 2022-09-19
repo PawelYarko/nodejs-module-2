@@ -12,6 +12,10 @@ const router = express.Router();
 
 router.post('/register', validationBody(schemas.registerSchema), ctrlWrapper(ctrl.register));
 
+router.get('/verify/:verificationToken', ctrlWrapper(crtl.verifyEmail));
+
+router.post('/verify/', validationBody(schemas.verifyEmailSchema), ctrlWrapper(ctrl.resendVerifyEmail));
+
 router.post('/login', validationBody(schemas.loginSchema), ctrlWrapper(ctrl.login));
 
 router.patch('/avatars', authenticate, upload.single("avatar"), ctrlWrapper(ctrl.updateAvatar))
